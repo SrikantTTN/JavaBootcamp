@@ -32,6 +32,15 @@ public class Books {
         this.avail = a;
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Books{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", avail='" + avail + '\'' +
+                '}';
+    }
 }
 enum Availability{
     Available,Not_Available,Issued;
